@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <title>Shut the box</title>
+    </head>
+
+    <body>
+
+        <h1 id="titulo">Shut the box</h1>
+
+        <div id="tela_inicial"><button class="botao_tela_inicial" onclick="iniciar()">Iniciar</button></div>
+
+        <main class="conteudo">
+            
+            <div class="pecas">
+
+                <img src="img/Peça_1.png" alt="Imagem da Peça com valor 1" id="peca_1" class="pecinha" onclick="virar()">
+                <img src="img/Peça_2.png" alt="Imagem da Peça com valor 2" id="peca_2" class="pecinha" onclick="virar()">
+                <img src="img/Peça_3.png" alt="Imagem da Peça com valor 3" id="peca_3" class="pecinha" onclick="virar()">
+                <img src="img/Peça_4.png" alt="Imagem da Peça com valor 4" id="peca_4" class="pecinha" onclick="virar()">
+                <img src="img/Peça_5.png" alt="Imagem da Peça com valor 5" id="peca_5" class="pecinha" onclick="virar()">
+                <img src="img/Peça_6.png" alt="Imagem da Peça com valor 6" id="peca_6" class="pecinha" onclick="virar()">
+                <img src="img/Peça_7.png" alt="Imagem da Peça com valor 7" id="peca_7" class="pecinha" onclick="virar()">
+                <img src="img/Peça_8.png" alt="Imagem da Peça com valor 8" id="peca_8" class="pecinha" onclick="virar()">
+                <img src="img/Peça_9.png" alt="Imagem da Peça com valor 9" id="peca_9" class="pecinha" onclick="virar()">
+                <img src="img/Peça_10.png" alt="Imagem da Peça com valor 10" id="peca_10" class="pecinha" onclick="virar()">
+                <img src="img/Peça_11.png" alt="Imagem da Peça com valor 11" id="peca_11" class="pecinha" onclick="virar()">
+                <img src="img/Peça_12.png" alt="Imagem da Peça com valor 12" id="peca_12" class="pecinha"onclick="virar()">
+            
+            </div>
+
+            <div class="botao">
+                <button type="button" id="botao_dados" onclick="girarDados()">Dados</button>
+                <img src="img/gif_dados.gif" alt="Gif de dados rolando" id = "botao_gif" hidden = true >
+            </div>
+
+            <div id="numero_sorteado" hidden = "true"></div>
+            <div id="lista_sorteio" class="lista_numeros" hidden="true" ></div>
+
+            <button class="botao_salvar" onclick="salvar()">Salvar</button>
+
+            <textarea type="text" disabled="disabled" class="regras">Como jogar shut the box
+
+Os dados são rolados, com o número sorteado você precisa subtrair das peças que vão de 1 a 12. O valor máximo que pode ser sorteado é 12, representando dois dados de 6 e o seu objetivo é chegar ao menor número restante, que será calculado com o valor das peças que sobrarem. Durante o jogo você terá uma jogada a mais caso perca e se quiser pode salvar a pontuação com seu nome enquanto tiver jogando.
+            </textarea>
+
+            <div id="botao_reiniciar" onclick="reiniciar()">Reiniciar</div>
+
+            <table id="tabela_pontuacao">
+                <tr>
+                    <th>Nome</th>
+                    <th>Pontuação</th>
+                    <th>Jogadas</th>
+                </tr>
+            </table>
+
+        </main>    
+    </body>
+
+    <script src="app.js"></script> 
+
+
+</html>
+
+
